@@ -1,0 +1,304 @@
+/* Responsive for Phone */
+@media only screen and (max-width: 600px) {
+
+    .sec-m {
+        margin: 10% 0;
+    }
+
+    .sec-heading {
+        font-size: 25px;
+    }
+
+    /* Navbar */
+    .navbar {
+        height: 6vh;
+        justify-content: space-between;
+
+    }
+
+    .left-nav {
+        justify-content: space-between;
+        width: 94%;
+        margin: 8px auto;
+    }
+
+    .left-nav a {
+        font-size: 30px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .right-nav {
+        width: 80%;
+        justify-content: space-evenly;
+        display: none;
+        transition: height 0.4s ease-in-out;
+    }
+
+    .nav-open {
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: height 0.3s ease-in-out;
+        position: fixed;
+    }
+
+    .right-nav-open {
+        display: block;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hamburger-active .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-active .burger-line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .hamburger-active .burger-line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* Name */
+    .name-box {
+        height: 100vh;
+    }
+
+    .name-box h2 {
+        font-size: 23px;
+    }
+
+    #my-name {
+        margin: 10px 0;
+        font-size: 40px;
+    }
+
+    /* About */
+    .about-box {
+        height: 108vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .img-div {
+        width: 75%;
+        height: 45vh;
+        border-radius: 15px;
+    }
+    @keyframes cardAnime {from {left: -10%;}to {left: 0%;}}
+    .card {
+        width: 80%;
+        height: 90%;
+        border-radius: 20px;
+        position: relative;
+        left: 0%;
+        box-shadow: 0 0 0;
+    }
+
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .para-div {
+        width: 95%;
+        height: 55vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .para-heading {
+        font-size: 23px;
+    }
+
+    .para-heading span {
+        font-size: 28px;
+    }
+
+    .para {
+        margin: 0;
+        width: 98%;
+        height: 50%;
+        font-size: 14px;
+    }
+
+    .big-btn {
+        font-size: 14px;
+        width: 35%;
+        height: 8%;
+        margin-left: 0;
+    }
+
+    .social-media a {
+        font-size: 18px;
+    }
+
+    /* Skills section */
+    .sec-heading h3 {
+        font-size: 20px;
+    }
+
+    .skill-box {
+        height: 65vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .img-box {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .img-box img {
+        width: 60%;
+    }
+
+    .skill-bar-box {
+        width: 98%;
+        height: 50%
+    }
+
+    .bar-box {
+        width: 95%;
+        height: 98%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .bar {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .progress {
+        width: 95%;
+        height: 28%;
+
+
+    }
+
+    .skill,
+    .skill-percent {
+        align-self: flex-start;
+        position: absolute;
+    }
+
+    .skill {
+        left: 4%;
+    }
+
+    .skill-percent {
+        right: 4%;
+    }
+
+    .bar span {
+        font-size: 14px;
+        text-align: center;
+        width: 15%;
+    }
+
+    /* Services */
+    #services {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .services-container {
+        height: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 85%;
+        height: 31%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .service-card-icon {
+        font-size: 70px;
+    }
+
+    .service-card-heading {
+        font-size: 20px;
+    }
+
+    .service-card-para {
+        font-size: 14px;
+    }
+
+    /* Contact */
+    .contact-box {
+        height: 75vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact-img {
+        width: 70%;
+        height: 25%;
+    }
+
+    @keyframes imgAnime {
+        from {
+            right: 0;
+            bottom: 0;
+        }
+
+        to {
+            right: -20%;
+            bottom: 8%;
+        }
+    }
+
+    .message-img {
+        width: 50%;
+        right: -20%;
+    }
+
+    .contact-form {
+        height: 65%;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .contact-form label {
+        width: 90%;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .user-input {
+        width: 95%;
+        margin-top: 8px;
+        font-size: 14px;
+        padding: 5px;
+
+    }
+
+
+    /* Footer */
+    .footer-social-media {
+        width: 100%;
+    }
+}

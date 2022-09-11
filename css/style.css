@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&family=PT+Sans+Caption&family=Pacifico&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: #f54768;
+    --black: #17181c;
+    --white: #ffffff;
+    --gray: #b1bbe0;
+    --blue: #38a6c2;
+
+    --heading-font: 'Poppins', sans-serif;
+    --para-font: 'PT Sans Caption', sans-serif;
+    --name-font: 'Lobster', cursive;
+    --nav-font: 'Pacifico', cursive;
+
+}
+
+body {
+    background-color: var(--black);
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--blue) var(--black) !important;
+}
+
+html::-webkit-scrollbar {
+    border-radius: 5px;
+    width: 0.3vw;
+    height: 0.7vh;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: var(--black);
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.sec-m {
+    margin: 5% 0;
+}
+
+.sec-heading {
+    font-family: var(--heading-font);
+    color: var(--white);
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Navbar */
+.navbar {
+    height: 9vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.left-nav {
+    margin-left: 2%;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.left-nav a {
+    color: var(--blue);
+    letter-spacing: 1.5px;
+    font-family: var(--name-font);
+    text-decoration: none;
+    font-size: 27px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.burger-line {
+    display: block;
+    background-color: var(--white);
+    width: 25px;
+    height: 3px;
+    margin: 3px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+.right-nav {
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 2%;
+}
+
+.right-nav li {
+    list-style: none;
+}
+
+.right-nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--nav-font);
+    color: var(--white);
+}
+
+.right-nav li a:hover {
+    color: var(--pink);
+    transition: all .2s ease-in;
+}
+
+
+/* Name */
+.name-box {
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-box h2 {
+    font-family: var(--para-font);
+    font-size: 30px;
+    color: var(--white);
+}
+
+#my-name {
+    margin: 8px 0;
+    font-family: var(--name-font);
+    color: var(--blue);
+    letter-spacing: 3.5px;
+    font-size: 50px;
+}
+
+.auto-type {
+    color: var(--pink);
+}
+
+/* About */
+.about-box {
+    height: 90vh;
+    display: flex;
+}
+
+.img-div {
+    width: 35%;
+    height: inherit;
+    background-color: var(--pink);
+    justify-content: center;
+    border-radius: 0 15px 0 0;
+}
+
+@keyframes cardAnime {from {left: 0;}to {left: 40%;}}
+
+.card {
+    width: 70%;
+    height: 80%;
+    box-shadow: 9px 9px 9px rgba(255, 255, 255, 0.17);
+    border-radius: 25px;
+    background-color: var(--white);
+    position: relative;
+    left: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card img {
+    width: 65%;
+}
+
+.card h3 {
+    font-family: var(--para-font);
+    font-size: 20px;
+}
+
+.line {
+    width: 20%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--gray);
+}
+
+.para-div {
+    width: 65%;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.para-heading {
+    color: var(--white);
+    font-family: var(--para-font);
+    font-size: 25px;
+}
+
+.para-heading span {
+    font-family: var(--name-font);
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: var(--blue);
+}
+
+.para {
+    margin: 20px 0;
+    width: 65%;
+    height: 35%;
+    font-size: 15px;
+    word-wrap: normal;
+    color: var(--white);
+    font-family: var(--para-font);
+    text-align: center;
+    justify-content: center;
+}
+
+.big-btn {
+    color: var(--pink);
+    border: 2px solid var(--pink);
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-size: 16px;
+    width: 25%;
+    height: 10%;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.big-btn:hover {
+    color: var(--white);
+    background-color: var(--pink);
+    transition: all .3s ease-in;
+}
+
+.social-media {
+    border-top: 1px solid var(--black);
+    width: 100%;
+    height: 8%;
+    justify-content: space-evenly;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--black);
+}
+
+.social-media a:hover {
+    text-shadow: 1px 1px var(--pink);
+}
+
+/* Skills section */
+.sec-heading h3 {
+    font-size: 25px;
+}
+
+.skill-box {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+.img-box {
+    width: 40%;
+    justify-content: center;
+}
+
+.img-box img {
+    width: 50%;
+}
+
+.skill-bar-box {
+    width: 60%;
+    justify-content: center;
+}
+
+.bar-box {
+    width: 95%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--white);
+    align-items: center;
+    font-family: var(--para-font);
+}
+
+.progress {
+    width: 80%;
+    height: 50%;
+}
+
+.bar span {
+    text-align: center;
+    width: 10%;
+}
+
+/* Progress bar animation */
+@keyframes bar1Animation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 95%;
+    }
+}
+
+@keyframes bar2Animation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes bar3Animation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes bar4Animation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+
+#bar1 {
+    height: 100%;
+    width: 95%;
+}
+
+#bar2,
+#bar5 {
+    width: 85%;
+}
+
+#bar3 {
+    width: 70%;
+}
+
+#bar4 {
+    width: 75%;
+}
+
+.bar-color {
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+
+/* Services */
+#services {
+    width: 100%;
+    height: 80vh;
+}
+
+.services-container {
+    width: inherit;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.service-card {
+    width: 30%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.service-card-icon {
+    color: var(--pink);
+    font-size: 85px;
+}
+
+.service-card-heading {
+    font-size: 25px;
+    color: var(--white);
+    font-family: var(--heading-font);
+}
+
+.service-card-para {
+    font-size: 15px;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--para-font);
+}
+
+
+
+/* Contact */
+.contact-box {
+    height: 90vh;
+    display: flex;
+}
+
+.contact-img {
+    width: 40%;
+    height: inherit;
+}
+
+@keyframes imgAnime {
+    from {
+        right: 0;
+        bottom: 0;
+    }
+
+    to {
+        right: -25%;
+        bottom: 8%;
+    }
+}
+
+.message-img {
+    width: 50%;
+    position: relative;
+    right: -25%;
+    bottom: 8%;
+}
+
+.contact-form {
+    height: inherit;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form label {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: var(--para-font);
+    font-size: 15px;
+    color: var(--white);
+    margin: 15px 0;
+}
+
+.user-input {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    border: 0;
+    border-bottom: 2px solid var(--pink);
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.user-input::placeholder {
+    color: grey;
+}
+
+.user-input:focus {
+    outline: 0;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--black);
+    border: 1px solid var(--white);
+}
+
+.footer-social-media {
+    height: inherit;
+    width: 60%;
+}
+
+.footer-social-media a {
+    color: white;
+}
+
+.footer-social-media a:nth-child(6) {
+    font-family: var(--para-font);
+    font-size: 15px;
+}
+
+/* top button */
+.top-btn {
+    position: fixed;
+    right: 3%;
+    bottom: 4%;
+    border: 1px solid var(--pink);
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+
+.top-btn i {
+    font-weight: thin;
+    color: var(--pink);
+    font-size: 25px;
+    padding: 5px;
+}
+
